@@ -67,12 +67,17 @@ As part of the build process, we will use the az cli Docker image to authenticat
 az ad sp create-for-rbac
 ```
 
-
 ### Test that you can authenticate
 
 ```bash
 az login --service-principal -u 0d279bf8-{snip}-9cd2ca77a284 -p faf9acbc-{snip}-c654c96f2b22 --tenant 72f988bf-{snip}-2d7cd011db47
 ```
+
+
+## Create GitHub token
+Goto [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new) and create a new Token to use for this Gateway. 
+
+
 
 ## Setup ACR and create Secret
 

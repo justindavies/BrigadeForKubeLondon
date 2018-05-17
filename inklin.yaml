@@ -3,11 +3,11 @@ repository: "github.com/justindavies/inklin"
 cloneURL: "https://github.com/justindavies/inklin"
 sharedSecret: "MySuperSecretPassword"
 github:
-    token: "308518a9f012cd7aea464ff5c57dc51ac64b02dd"
+    token: ""
 secrets:
     acrServer: "inklin.azurecr.io"
     acrName: "inklin"
-    azServicePrincipal: "0d279bf8-a364-439f-bbc4-9cd2ca77a284"
-    azClientSecret: "faf9acbc-3055-4879-a772-c654c96f2b22"
-    azTenant: "72f988bf-86f1-41af-91ab-2d7cd011db47"
+    azServicePrincipal: ""
+    azClientSecret: ""
+    azTenant: ""
    
