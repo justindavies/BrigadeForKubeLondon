@@ -120,6 +120,17 @@ Once saved, use helm to deploy the Brigade project.  This will also save your se
 helm install --name inklin brigade/brigade-project -f inklin.yaml
 ```
 
+
+## Setup GitHub webhook
+
+```bash
+kubectl get svc
+NAME                        TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)          AGE
+brigade-brigade-github-gw   LoadBalancer   10.0.108.225   168.61.49.110   7744:32309/TCP   43m
+```
+
+Edit the repository properties and add a webhook for http://{IP}:7744/events/github, choose Content type of JSON, set the shared secret (that you specified in the project definition)
+
 # Setup brigade.js in your repository
 
 Now let's dive into the [brigade.js](https://github.com/justindavies/inklin/blob/master/brigade.js) configuration, build and deploy...
